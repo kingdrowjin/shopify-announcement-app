@@ -1,0 +1,11 @@
+api_version = "2024-10"
+
+[[extensions]]
+type = "theme"
+name = "Announcement Banner"
+handle = "announcement-banner"
+
+  [[extensions.blocks]]
+  type = "app-embed"
+  name = "Announcement Banner"
+  file = "blocks/app-embed.liquid"

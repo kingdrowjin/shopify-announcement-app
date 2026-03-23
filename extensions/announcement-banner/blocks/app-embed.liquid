@@ -1,0 +1,27 @@
+{% assign announcement_text = shop.metafields.my_app.announcement %}
+
+{% if announcement_text != blank %}
+  <div id="announcement-banner" style="
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    position: relative;
+    z-index: 9999;
+    letter-spacing: 0.5px;
+  ">
+    {{ announcement_text }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Announcement Banner",
+  "target": "head",
+  "stylesheet": "",
+  "settings": []
+}
+{% endschema %}

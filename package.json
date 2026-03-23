@@ -1,0 +1,15 @@
+{
+  "name": "shopify-announcement-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd web/backend && nodemon index.js",
+    "dev:client": "cd web/frontend && vite",
+    "build": "cd web/frontend && vite build",
+    "start": "cd web/backend && node index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
