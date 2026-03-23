@@ -1,5 +1,5 @@
-const connectDB = require("./lib/db");
-const Announcement = require("./lib/Announcement");
+const connectDB = require("../lib/db");
+const Announcement = require("../lib/Announcement");
 
 module.exports = async function handler(req, res) {
   await connectDB();
